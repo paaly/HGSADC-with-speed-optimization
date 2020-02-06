@@ -9,6 +9,16 @@ class Individual:
     
     def __init__(self):
         
+        self.installation_chromosome = {} #Length equal to number of installations
+        self.psv_chromosome = {} #Length equal to number of psv's
+        self.tour_chromosome = {{}} #External dict determines day & vessel, internal dict determines order of installation visits
+        
+        self.solution{{}} #External dict determines day, vessel & intallation visit, internal dict determines speeds, cost, service time, waiting time, preparation time
+        
+        self.objective_value = None #Sum of all costs including constraint relaxations
+        
+        #TODO
+        
         #Installations chromosome
         
         #PSV Chromosome
@@ -30,3 +40,10 @@ class Individual:
                     #If collides again
             
                         #Adjust speeds and keep objective value
+                
+        #Return solution given chromosomes
+        
+        def get_objective_value():
+            return self.objective_value
+        
+        
